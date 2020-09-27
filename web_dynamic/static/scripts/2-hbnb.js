@@ -10,5 +10,16 @@ $(document).ready(function () {
             delete datos[$(this).attr('data-name')];
         }
         $('DIV.amenities h4').text(Object.keys(datos).join(', '));
-    });   
+    });
+    
+    $.getJSON('http://0.0.0.0:5001/api/v1/status/', function (data) {
+        console.log(data.status);
+        if (data.status === 'OK') {
+            console.log('prendido')
+            $('DIV#api_status').toggleClass('available');
+        }
+        else {
+            $('DIV#api_status').toggleClass('unavailable');
+        }
+    })
 });

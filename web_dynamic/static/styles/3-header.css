@@ -9,3 +9,17 @@ header .logo {
     left: 20px;
     height: 100%;
 }
+
+.unavailable {
+    background-color: #CCCCCC;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    right: 30px;
+    position: fixed;
+    top: 15px;
+}
+
+.available {            
+    background-color: #ff545f;
+}
