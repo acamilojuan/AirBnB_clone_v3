@@ -10,14 +10,17 @@ header .logo {
     height: 100%;
 }
 
-.unavailable {
-    background-color: #CCCCCC;
+#api_status {
     border-radius: 50%;
     height: 40px;
     width: 40px;
     right: 30px;
-    position: fixed;
+    position: absolute;
     top: 15px;
+}
+.unavailable {
+    background-color: #CCCCCC;
+ 
 }
 
 .available {            
